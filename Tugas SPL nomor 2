@@ -1,0 +1,37 @@
+#Author = Muhammad Khalifah Milano
+#NIM = 19523217
+
+install.packages("matlib")
+library("matlib")
+
+#Soal nomor 1
+A <- matrix(c(5,-4,-1,1),2,2, TRUE)
+b <- c(-10,2)
+showEqn(A,b)
+echelon(A,b)
+solve(A,b)
+plotEqn(A,b)
+
+#Soal nomor 2
+B <- matrix(c(4,-2,0,5,-2,1,3,4,-1),3,3, TRUE)
+x <- c(2,7,3)
+showEqn(B,x)
+echelon(B,x)
+solve(B,x)
+plotEqn3d(B,x)
+
+#Soal nomor 3
+D <- matrix(c(1,1,1,2,3,5,4,0,5),3,3, TRUE)
+y <- c(5,8,2)
+showEqn(D,y)
+echelon(D,y)
+solve(D,y)
+plotEqn3d(D,y)
+
+#Soal nomor 4
+E <- matrix(c(2,5,1,-1,4,3,5,0,-2),3,3, TRUE)
+z <- c(-12,-4,-3)
+showEqn(E,z)
+echelon(E,z, FALSE,TRUE)
+solve(E,z,FALSE,TRUE)
+plotEqn3d(E,z)
